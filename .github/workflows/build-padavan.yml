@@ -121,9 +121,9 @@ jobs:
         echo "CONFIG_FIRMWARE_ENABLE_USB=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_U2EC=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=y" >> .config
-        CONFIG_FIRMWARE_INCLUDE_SFTP=y
-        CONFIG_FIRMWARE_INCLUDE_HTTPS=y
-        CONFIG_FIRMWARE_INCLUDE_FTPD=y
+        echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=y" >> .config
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         #########################################################################################
