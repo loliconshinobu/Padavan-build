@@ -40,6 +40,8 @@ jobs:
         git clone --depth=1 https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
         fi
         cd /opt/rt-n56u/toolchain-mipsel
+        cp -f htop-3.0.2.tar.gz /opt/rt-n56u/trunk/user/htop/
+        cp -f Makefile /opt/rt-n56u/trunk/user/htop/
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     - name: Build Firmware
