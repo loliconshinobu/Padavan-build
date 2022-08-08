@@ -46,6 +46,7 @@ jobs:
         rm -f /opt/rt-n56u/trunk/user/htop/Makefile
         cp -f ./Makefile /opt/rt-n56u/trunk/user/htop/
         ls /opt/rt-n56u/trunk/user/htop/
+        cat /opt/rt-n56u/trunk/user/htop/Makefile
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
